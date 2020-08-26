@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/login.css">
+  <style>
+    :root {
+      --error-color: #a94442;
+      --primary-color: #007bff;
+      --secondary-color: #0069d9;
+      --success-color: #348e7f;
+      --error-color: #e24443;
+      --warning-color: #faa740;
+      --black-color: rgb(66,66,66);
+      --placeholder-color: rgba(27, 173, 155, 0.70);
+      --link-color-primary: --primary-color;
+      --link-color: --primary-color;
+      --background-primary-color: #f5f5f5;
+      --background-secondary-color: #FDFDFD;
+      --nav-primary-color: #FDFDFD;
+      --nav-secondary-color: #c83737;
+      --nav-text-primary-color: #fff;
+      --nav-text-secondary-color: #fdfdfd;
+      --footer-background-primary: #800000;
+      --footer-text-primary-color: #fff;
+      --footer-text-secondary-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <form class="form-signin" action="/admin/login" method="post">
+    <h1 class="h3 mb-3 font-weight-normal">Bienvenido</h1>
+    <input type="hidden" name="key" value="value">
+    <span class="extraData"></span>
+    <!--USER -->
+    <label for="user" class="sr-only">User</label>
+    <input type="text" id="user" class="form-control" placeholder="Usuario" required="" autofocus="" name="user">
+    <!--CSRF -->
+    <input type="hidden" name="" value="">
+    <!--PASS -->
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="" name="password">
+    <!--MESSAGE-->
+    <p class=" message" style="margin-top:10px;" id="login-message"></p>
+    <!--BUTTON -->
+    <button class="btn btn-lg btn-primary btn-block" type="submit">
+      Ingresar
+    </button>
+    <!--FooTER LOGIN NAV -->
+    <div class="link-login">
+      <a class="" href="/login/sign_in">
+        Registrarse
+      </a>
+      <a id="forgotpassword" class="pull-right" href="/login/reset_password">
+        Olvidó su Contraseña
+      </a>
+    </div>
+    <p class="mt-5 mb-3 text-muted">Powered By <a href="http://softweb.pe/"> Softtware Web Perú</a> © 2017-2018</p>
+  </form>
+  <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>
