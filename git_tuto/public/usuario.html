@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/secretaria.css">
+</head>
+<body>
+    
+      <div class="container">
+          <br>
+          <br>
+          
+          <p>GESTIÓN DE ÁREA DE OBJETOS PERDIDOS<img src="./img/logo.svg" align="right"width="300px" height="200px"></p>
+        <div class="row" id="first">
+            <div class="col-sm-8">
+                <h3>GESTIÓN DE ÁREA DE OBJETOS PERDIDOS</h3>
+            </div>
+            <div class="col-sm-4"><div id="logo"><img  src="./img/logo.svg" width="300px" height="200px"></div>
+            </div>
+          </div>
+        <div class="row" id="third">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SOLICITUD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PREGUNTAS FRECUENTES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">ACERCA DE NOSOTROS</a>
+              </li>
+           
+          </ul>
+            
+          </div>
+          <br>
+          <div class="card">
+            <div class="card-body">
+          <div class="row">
+            <div class="col"><b>Filtrar por</b> </div></div>
+ 
+          <br>
+          <div class="row">
+            <div class="col" id="uno"> * Fecha Hallado</div>
+            <div class="col"><input type="date" id="box2" name="trip-start"value="2018-07-22" min="2018-01-01" max="2018-12-31"></div>
+            <div class="col">* Categoria</div>
+            <div class="col"><select id="box1" class="form-control">
+                  <option selected>elegir...</option>
+                  <option>...</option>
+                </select>
+              </div>
+          </div>
+          
+           <br> 
+          <div class="row" id="sixth">
+            <div class="col-sm-6">
+              <button id="buscar" class="btn btn-warning badge-pill" type="submit" 
+            style="width: 120px;">BUSCAR</button>
+            </div>
+            <div class="col-sm-6">
+              <button id="realizar" class="btn btn-warning badge-pill" type="submit" 
+            style="width: 180px;">REALIZAR SOLICITUD</button>
+            </div>
+           
+          </div>
+          <br>
+          
+        </div>
+            
+          
+      </div>
+      <br>
+
+      
+        <div class="table-responsive">
+          <table class="table table-hover table-bordered text-center " id="cb_2">
+            <thead class="cb_1">
+              <tr>
+                <th scope="col">FECHA</th>
+                
+                <th scope="col">LUGAR</th>
+                <th scope="col">CATEGORIA</th>
+                <th scope="col">OBJETO</th>
+                <th scope="col">SELECCIONAR</th>
+
+                
+            </thead>
+            <tbody id = "tablaObjetos">
+              <tr>
+                <td>12/06/2020</td>
+                <td>Pabellón S</td>
+                <td>Tecnológicos</td>
+                <td>Cargador</td>
+                <td><input type="checkbox" id="1"></td>
+            </tr>
+            <tr>
+                <td>12/06/2020</td>
+                <td>Pabellón R</td>
+                <td>Tecnológicos</td>
+                <td>Cargador</td>
+                <td><input type="checkbox" id="1"></td>
+            </tr>
+            <tr>
+                <td>12/06/2020</td>
+                <td>Pabellón S</td>
+                <td>Tecnológicos</td>
+                <td>Adaptador</td>
+                <td><input type="checkbox" id="1"></td>
+
+            <tr>
+                <td>12/06/2020</td>
+                <td>Estudios Generales</td>
+                <td>Tecnológicos</td>
+                <td>USB</td>
+                <td><input type="checkbox" id="1"></td>
+            </tr>
+            <tr>
+                <td>12/06/2020</td>
+                <td>Torre B</td>
+                <td>Tecnológicos</td>
+                <td>Audifonos</td>
+                <td><input type="checkbox" id="1"></td>
+            </tr>
+            <tr>
+                <td>12/06/2020</td>
+                <td>Pabellón S</td>
+                <td>Tecnológicos</td>
+                <td>Cargador</td>
+                <td><input type="checkbox" id="1"></td>
+            </tr>
+              
+            </tbody>
+    
+          </table>
+    
+          
+    
+        </div>
+      
+</html>
