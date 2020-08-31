@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/secretaria.css">
+</head>
+<body>
+      
+      
+  <div class="container">
+    <br>
+    <br>
+  <div class="row" id="first">
+      <div class="col-sm-8">
+          <h3>GESTIÓN DE ÁREA DE OBJETOS PERDIDOS</h3>
+      </div>
+      <div class="col-sm-4"><img  src="./img/logo_3.svg" width="252px" height="62px">
+      </div>
+    </div>
+  <br>
+  <div class="row" id="third">
+    <ul class="nav nav-tabs" >
+      <li class="nav-item">
+        <a class="nav-link active" href="./secretaria.html">OBJETOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registro.html">REGISTRO OBJETOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./solicitud.html">SOLICITUDES USUARIO</a>
+      </li>
+     
+    </ul>
+      
+    </div>
+    <br>
+        <div class="card">
+          <div class="card-body">
+        <div class="row">
+          <div class="col"><b>Filtrar por</b> </div></div>
+
+        <br>
+        <div class="row">
+          <div class="col" id="uno"> * Fecha </div>
+          <div class="col"><input type="date" id="box2" name="trip-start"value="2018-07-22" min="2018-01-01" max="2018-12-31"></div>
+          <div class="col"><button id="registrar_1" class="btn btn-warning " type="submit" 
+            >BUSCAR</button></div>
+          </div>
+         
+        </div>
+         
+        <br>
+        
+        
+    </div>
+    <div class="container pt-5">
+      <div class="row">
+        <table class ="table table-hover table-bordered text-center " id="cb_2">
+          <thead class="cb_1">
+            <tr class="text-center"> 
+            <th scope="col">NUM_SOL</th>
+            <th scope="col">COD_OBJ</th>
+            <th scope="col">ESTADO</th>
+            <th scope="col">DESCRIP</th>
+            <th scope="col">FECHA_ENVIO</th>
+            <th scope="col">FECHA_RPTA</th>
+            <th scope="col">COD_USUARIO</th>
+            <th scope="col">CARACT_ESP</th>
+            <th scope="col">ACCIÓN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>200</th>
+              <th>103</th>
+              <th>en proceso</th>
+              <th>celular</th>
+              <th>20/10/2000</th>
+              <th>30/10/2000</th>
+              <th>20021523</th>
+              <th>dañado</th>
+              <th><a href="./verificar.html"><img src="./img/verificar.png " width="30px" height="30px"></a></th>
+              
+            </tr>
+            
+          </tbody>
+        </table>
+      </div> 
+      <br>
+     
+  
+
+    
+    
+    </body>
+
+
+    </html>
+
+
+
+      
