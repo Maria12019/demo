@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>OBJETOS</title>
+    <link rel="icon" href="logo1.ico" type="image/vnd.microsoft.icon" size="32x32"/> 
+    <style>
+      .orange-background {background-color:#f86815;}
+      .white {color:#ffffff;}
+      .black-background {background-color:#000000;}
+      .nav-tabs>li>a {color:black;}
+  </style>
+  </head>
+
+  <body>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-8">
+        <h3>GESTIÓN DE ÁREA DE OBJETOS PERDIDOS</h1>
+      </div>
+      <div class="col-4">
+        <img src="img/ulogo.png" width="252" height="62" alt="Universidad de Lima">
+      </div> 
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">OBJETOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">REGISTRO OBJETOS</a>
+          </li>    
+        </ul> 
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <p>Filtrar por:</p>
+    <div class="row">
+      <div class="col-4"><label>* Fecha hallado:</label>
+      <input type="date"></div>  
+
+      <div class="col-4"><label>* Categoría:</label>
+        <select name="categoria">
+          <option value="1">Tecnológicos</option> 
+          <option value="2">Objetos personales</option> 
+          <option value="3">Documentos</option>
+          <option value="4">Objetos académicos</option> 
+       </select></div>
+
+      <div class="col-4"><input type="button" value="Buscar" class="btn btn-primary orange-background white"></div>   
+    </div>
+  </div>
+
+    <div class="container pt-5">
+      <div class="row">
+        <table class ="table table-bordered">
+          <thead class="thead-light">
+            <tr class="text-center"> 
+              <th>COD_OBJETO</th>
+              <th>NOMBRE</th>
+              <th>CATEGORÍA</th>
+              <th>MARCA</th>
+              <th>FECHA HALLADO</th>
+              <th>FECHA DEVOL.</th>
+              <th>LUGAR</th>
+              <th>NUM. ANAQUEL</th>
+              <th>CARACT. ESP.</th>
+              <th>COD. USU. ENTREGA</th>
+              <th>ESTADO</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/Bootstrap.min.js"></script>
+
+  </body>
+</html>
