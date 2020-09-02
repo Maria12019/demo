@@ -2,89 +2,106 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OBJETOS</title>
-    <link rel="icon" href="logo1.ico" type="image/vnd.microsoft.icon" size="32x32"/> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/secretaria.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo1.ico">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <style>
       .orange-background {background-color:orange; border-color: orange;}
       .white {color:#ffffff;}
       .black-background {background-color:#000000;}
-      .nav-tabs .nav-link.active{
-      border-color: orange;
-      background-color:orange;
-      }
   </style>
   </head>
 
   <body>
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-8">
-        <h3>GESTIÓN DE ÁREA DE OBJETOS PERDIDOS</h1>
+    <div class="container">
+      <br>
+      <br>
+    <div class="row" id="first">
+        <div class="col-sm-8">
+            <h3>GESTIÓN DE ÁREA DE OBJETOS PERDIDOS</h3>
+        </div>
+        <div class="col-sm-4"><img  src="./img/logo_3.svg" width="252px" height="62px">
+        </div>
       </div>
-      <div class="col-4">
-        <img src="img/ulogo.png" width="252" height="62" alt="Universidad de Lima">
-      </div> 
-    </div>
     <br>
-    <div class="row">
-      <div class="col-12">
-        <ul class="nav nav-tabs border-warning">
-          <li class="nav-item">
-            <a href="area_seguridad_objetos.html" class="nav-link active text-white" href="#"><b>OBJETOS</b></a>
-          </li>
-          <li class="nav-item">
-            <a href="area_seguridad_registro.html" class="nav-link bg-dark text-white"><b>REGISTRO OBJETOS</b></a>
-          </li>    
-        </ul> 
+    <div class="row" id="third">
+      <ul class="nav nav-tabs col-12" >
+        <li class="nav-item">
+          <a class="nav-link active" href="./area_seguridad_objetos.html">OBJETOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="area_seguridad_registro.html">REGISTRO OBJETOS</a>
+        </li>
+      </ul>
+        
       </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <p>Filtrar por:</p>
-    <div class="row">
-      <div class="col-4"><label>* Fecha hallado:</label>
-      <input type="date"></div>  
-
-      <div class="col-4"><label>* Categoría:</label>
-        <select name="categoria">
-          <option value="1">Tecnológicos</option> 
-          <option value="2">Objetos personales</option> 
-          <option value="3">Documentos</option>
-          <option value="4">Objetos académicos</option> 
-       </select></div>
-
-      <div class="col-4"><input type="button" value="Buscar" class="btn btn-primary orange-background white"></div>   
-    </div>
-  </div>
-
-    <div class="container pt-5">
-      <div class="row">
-        <table class ="table table-bordered">
-          <thead class="thead-light">
-            <tr class="text-center"> 
-              <th>COD_OBJETO</th>
-              <th>NOMBRE</th>
-              <th>CATEGORÍA</th>
-              <th>MARCA</th>
-              <th>FECHA HALLADO</th>
-              <th>FECHA DEVOL.</th>
-              <th>LUGAR</th>
-              <th>NUM. ANAQUEL</th>
-              <th>CARACT. ESP.</th>
-              <th>COD. USU. ENTREGA</th>
-              <th>ESTADO</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-    </div>
-
-
-
+      <br>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+              <div class="col"><b>Filtrar por</b> </div></div>
+   
+            <br>
+            <div class="row">
+              <div class="col" id="uno"> * Fecha Hallado: </div>
+              <div class="col"><input type="date" id="box2" name="trip-start"value="2018-07-22" min="2018-01-01" max="2018-12-31"></div>
+              <div class="col">* Categoría:</div>
+              <div class="col"><select id="box1" class="form-control">
+                    <option selected>elegir...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+            
+              <div class="col">
+                <button id="buscar" class="btn btn-warning badge-pill" type="submit" 
+              style="width: 100px;">BUSCAR</button>
+              </div>
+              
+            </div> 
+            </div>
+           
+          </div>        
+          
+          <div class="container pt-5">
+            <div class="row">
+              <table class ="table table-hover table-bordered text-center" id="cb_2">
+                <thead class="cb_1">
+                  <tr class="text-center"> 
+                  <th scope="col">CÓDIGO</th>
+                  <th scope="col">NOMBRE</th>
+                  <th scope="col">MARCA</th>
+                  <th scope="col">FECHA HALLADO</th>
+                  <th scope="col">FECHA DEV.</th>
+                  <th scope="col">LUGAR</th>
+                  <th scope="col">NÚM. ANAQUEL</th>
+                  <th scope="col">CARACT. ESP.</th>
+                  <th scope="col">COD. USU. ENTREGA</th>
+                  <th scope="col">ESTADO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div> 
+        <br>
 
 
 

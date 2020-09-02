@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>REGISTRO</title>
     <link rel="icon" href="logo1.ico" type="image/vnd.microsoft.icon" size="32x32"/> 
@@ -15,11 +15,21 @@
       border-color: orange;
       background-color:orange;
       }
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/secretaria.css">
+    <link rel="shortcut icon" type="image/x-icon" href="logo1.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
   </style>
   </head>
 
   <body>
-  <div class="container py-5">
+ <!--<div class="container py-5">
     <div class="row">
       <div class="col-8">
         <h3>GESTIÓN DE ÁREA DE OBJETOS PERDIDOS</h1>
@@ -120,7 +130,126 @@
         <input type="button" value="REGISTRAR OBJETO" class="btn btn-primary orange-background white">   
     </div>
   </div>
+--> 
+<div class="container">
+  <br>
+  <br>
+<div class="row" id="first">
+    <div class="col-sm-8">
+        <h3>GESTIÓN DE ÁREA DE OBJETOS PERDIDOS</h3>
+    </div>
+    <div class="col-sm-4"><img  src="./img/logo_3.svg" width="252px" height="62px">
+    </div>
+  </div>
+<br>
+<div class="row" id="third">
+  <ul class="nav nav-tabs col-12" >
+    <li class="nav-item">
+      <a class="nav-link" href="./area_seguridad_objetos.html">OBJETOS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="registro.html">REGISTRO OBJETOS</a>
+    </li>
+  </ul>
+    
+  </div>
+  <br>
+ 
+<br>
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputObjeto">Objeto</label>
+      <input type="search" class="form-control" id="inputObjeto" placeholder="">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputAnaquel">Número de anaquel</label>
+      <select id="inputState" class="form-control">
+          <option selected>Elegir...</option>
+          <option>...</option>
+        </select>
+    </div>
+  </div>
+  <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCategoria">Categoría</label>
+        <select id="inputState" class="form-control">
+          <option selected>Elegir...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputFecha">Fecha de Devolución</label>
+        <input type="date" class="form-control" id="inputAnaquel" placeholder="">
+      </div>
+    </div>
 
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputMarca">Marca</label>
+        <input type="search" class="form-control" id="inputMarca" placeholder="">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputUsuarioE">Código de usuario que entrega</label>
+        <input type="search" class="form-control" id="inputUsuarioE" placeholder="">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-6">
+          <label for="inputHallado">Fecha de Hallado</label>
+          <input type="date" class="form-control" id="inputHallado" placeholder="">
+        </div>
+      <div class="form-group col-md-6">
+        <label for="inputEstado">Estado del Objeto</label>
+        <select id="inputEstado" class="form-control">
+          <option selected>Elegir...</option>
+          <option>...</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+          <label for="inputLugar">Lugar</label>
+          <input type="search" class="form-control" id="inputLugar" placeholder="">
+        </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+          <label for="inputesp">Características Especiales</label>
+          <textarea class="form-control" id="inputesp" rows="3"></textarea>
+        </div>
+    </div>
+    
+    <!-------------------------------------------->
+    <div class="container text-center">
+     
+      <button type="button" class="btn btn-primary" id="registrar_1" data-toggle="modal" data-target="#myModal">
+          REGISTRAR OBJETO
+      </button>
+      <br>
+      <br>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+           
+            
+            <div class="modal-body">
+              <button type="button" class="close" id="boton" data-dismiss="modal">&times;</button>
+              <br>
+              <p>El objeto</p>
+              <p>ha sido registrado</p>
+              <p>con éxito.</p>
+             
+            </div>            
+            
+          </div>
+        </div>
+      </div>     
+    </div>         
+</form>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

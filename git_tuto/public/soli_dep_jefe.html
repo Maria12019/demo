@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal </title>
+    <title>SOLICITUDES DE DONACIÓN</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/secretaria.css">
+    <link  href="logo1.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
       
@@ -27,12 +28,14 @@
         <a class="nav-link" href="./jefe_objeto.html">OBJETOS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="registro.html">REGISTRO OBJETOS</a>
+        <a class="nav-link" href="registro_jefe.html">REGISTRO OBJETOS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="./solicitud.html">SOLICITUDES USUARIO</a>
+        <a class="nav-link" href="./soli_us_jefe.html">SOLICITUDES USUARIO</a>
       </li>
-     
+      <li class="nav-item">
+        <a class="nav-link active" href="./soli_dep_jefe.html">SOLICITUDES DEPARTAMENTO</a>
+      </li>       
     </ul>
       
     </div>
@@ -44,7 +47,7 @@
 
         <br>
         <div class="row">
-          <div class="col" id="uno"> * Fecha </div>
+          <div class="col" id="uno"> * Fecha:</div>
           <div class="col"><input type="date" id="box2" name="trip-start"value="2018-07-22" min="2018-01-01" max="2018-12-31"></div>
           <div class="col"><button id="buscar" class="btn btn-warning badge-pill" type="submit" 
             style="width: 100px;">BUSCAR</button></div>
@@ -61,29 +64,33 @@
         <table class ="table table-hover table-bordered text-center " id="cb_2">
           <thead class="cb_1">
             <tr class="text-center"> 
-            <th scope="col">NUM_SOL</th>
-            <th scope="col">COD_OBJ</th>
+            <th scope="col">NUM. SOL.</th>
+            <th scope="col">CATEGORÍA</th>
             <th scope="col">ESTADO</th>
-            <th scope="col">DESCRIP</th>
-            <th scope="col">FECHA_ENVIO</th>
-            <th scope="col">FECHA_RPTA</th>
-            <th scope="col">COD_USUARIO</th>
-            <th scope="col">CARACT_ESP</th>
+            <th scope="col">DESCRIP.</th>
+            <th scope="col">FECHA ENVÍO</th>
+            <th scope="col">FECHA RPTA.</th>
+            <th scope="col">COD. DPTO.</th>
+            <th scope="col">PISO</th>
+            <th scope="col">CANT. OBJ.</th>
+            <th scope="col">STOCK</th>
             <th scope="col">ACCIÓN</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th>200</th>
-              <th>103</th>
-              <th>en proceso</th>
-              <th>celular</th>
+              <th>TECNOLÓGICOS</th>
+              <th>EN PROCESO</th>
+              <th>CELULAR</th>
               <th>20/10/2000</th>
               <th>30/10/2000</th>
-              <th>20021523</th>
-              <th>dañado</th>
-              <th><a href="./verificar.html"><button id="ver" class="btn btn-warning badge-pill" type="submit" 
-                style="width: 100px ; background-color:rgba(216, 87, 12, 0.918); border-color: rgba(216, 87, 12, 0.918);color: aliceblue; border-radius: 10px;">VERIFICAR</button></a></th>
+              <th>DPTO. H</th>
+              <th>2</th>
+              <th>10</th>
+              <th>18</th>
+              <th><a href="./#"><button id="ver" class="btn btn-warning badge-pill" type="submit" 
+                style="width: 100px ; background-color:rgba(216, 87, 12, 0.918); border-color: rgba(216, 87, 12, 0.918);color: aliceblue; border-radius: 10px;">VER</button></a></th>
               
             </tr>
             
