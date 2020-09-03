@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERIFICAR SOLICITUD DE DONACIÓN</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/secretaria.css">
+    <link  href="logo1.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <br>
+    <br>
+  <div class="row" id="first">
+      <div class="col-sm-8">
+          <h3>GESTIÓN DE ÁREA DE OBJETOS PERDIDOS</h3>
+      </div>
+      <div class="col-sm-4"><img  src="./img/logo_3.svg" width="252px" height="62px">
+      </div>
+    </div>
+  <br>
+  <div class="row" id="third">
+    <ul class="nav nav-tabs col-12" >
+        <li class="nav-item">
+          <a class="nav-link" href="./jefe_objeto.html">OBJETOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registro_jefe.html">REGISTRO OBJETOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./soli_us_jefe.html">SOLICITUDES USUARIO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./soli_dep_jefe.html">SOLICITUDES DEPARTAMENTO</a>
+        </li>       
+      </ul>
+      
+    </div>
+    <br>
+    <a href="./soli_dep_jefe.html">
+    <button type="button" class="btn btn-secondary" id="boton"data-toggle="tooltip" data-placement="right" title="Haz click para retroceder y ver más solicitudes">
+      <img src="./img/Imagen1.png"width="30px" height="30px">
+    </button></a>
+    <br>
+    <div class="container pt-5">
+      <div class="row">
+        <table class ="table table-hover table-bordered text-center " id="cb_2">
+          <thead class="cb_1">
+            <tr class="text-center"> 
+            <th scope="col">NÚM. SOL.</th>
+            <th scope="col">CATEGORÍA</th>
+            <th scope="col">ESTADO</th>
+            <th scope="col">DESCRIP.</th>
+            <th scope="col">FECHA ENVÍO</th>
+            <th scope="col">FECHA RPTA.</th>
+            <th scope="col">COD. DPTO.</th>
+            <th scope="col">PISO</th>
+            <th scope="col">CANT. OBJ.</th>
+            <th scope="col">STOCK</th>
+            
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div> 
+      <br>
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-6 text-right">
+                <button id="rechazar" class="btn btn-warning badge-pill" type="submit" 
+              style="width: 100px;">RECHAZAR</button>
+              </div>
+              <div class="col-sm-6">
+                <button id="buscar" class="btn btn-warning badge-pill" type="submit" 
+              style="width: 100px;">ACEPTAR</button>
+        </div>
+        
+      </div>
+  
+     
+    
+</body>
+</html>
