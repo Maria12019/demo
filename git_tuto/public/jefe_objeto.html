@@ -25,27 +25,33 @@
     </div>
   <br>
   <div class="row" id="third">
-    <nav class="nav">
-        <a href="./secretaria.html" class="nav-item is-active" active-color="rgba(248, 97, 10, 0.836)">OBJETO</a>
-        <a href="./registro.html" class="nav-item" active-color="rgba(248, 97, 10, 0.836)">REGISTRAR</a>
-        <a href="./solicitud.html" class="nav-item" active-color="rgba(248, 97, 10, 0.836)">SOLICITUD</a>
-        <span class="nav-indicator"></span>
-       </nav>
-
+    <ul class="nav nav-tabs col-12" >
+      <li class="nav-item">
+        <a class="nav-link active" href="./jefe_objeto.html">OBJETOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registro_jefe.html">REGISTRO OBJETOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./soli_us_jefe.html">SOLICITUDES USUARIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./soli_dep_jefe.html">SOLICITUDES DEPARTAMENTO</a>
+      </li>   
+    </ul>
+      
     </div>
     <br>
-  
-  <div class="card">
+        <div class="card">
           <div class="card-body">
-            
             <div class="row">
             <div class="col"><b>Filtrar por</b> </div></div>
  
           <br>
           <div class="row">
-            <div class="col" id="uno"> * Fecha Hallado</div>
+            <div class="col" id="uno"> * Fecha Hallado:</div>
             <div class="col"><input type="date" id="box2" name="trip-start"value="2018-07-22" min="2018-01-01" max="2018-12-31"></div>
-            <div class="col">* Categoria</div>
+            <div class="col">* Categoría:</div>
             <div class="col"><select id="box1" class="form-control">
                   <option selected>elegir...</option>
                   <option>...</option>
@@ -74,11 +80,11 @@
                 <th scope="col">NOMBRE</th>
                 <th scope="col">MARCA</th>
                 <th scope="col">FECHA HALLADO</th>
-                <th scope="col">FECHA DEV</th>
+                <th scope="col">FECHA DEV.</th>
                 <th scope="col">LUGAR</th>
-                <th scope="col">NUM ANAQUEL</th>
-                <th scope="col">CARACT ESP</th>
-                <th scope="col">COD USU ENTREGA</th>
+                <th scope="col">NÚM ANAQUEL</th>
+                <th scope="col">CARACT. ESP.</th>
+                <th scope="col">COD. USU. ENTREGA</th>
                 <th scope="col">ESTADO</th>
                 <th scope="col">ACCIÓN</th>
                 </tr>
@@ -95,7 +101,7 @@
                   <th></th>
                   <th></th>
                   <th></th>
-                  <th><a href="./registro.html"><button id="ver" class="btn btn-warning badge-pill" type="submit" 
+                  <th><a href="./registro_jefe.html"><button id="ver" class="btn btn-warning badge-pill" type="submit" 
                     style="width: 120px ; background-color:rgba(216, 87, 12, 0.918); border-color: rgba(216, 87, 12, 0.918);color: aliceblue; border-radius: 10px;">ACTUALIZAR</button></th>
                 </tr>
                 
@@ -107,9 +113,9 @@
   
 
     
-      <script src="./js/snake.js"></script>
-    </body>
     
+    </body>
+
 
     </html>
 

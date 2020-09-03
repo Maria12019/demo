@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal </title>
+    <title>SOLICITUDES DE USUARIO</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/secretaria.css">
+    <link  href="logo1.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
       
@@ -22,15 +23,21 @@
     </div>
   <br>
   <div class="row" id="third">
-
-    <nav class="nav">
-      <a href="./secretaria.html" class="nav-item is-active" active-color="rgba(248, 97, 10, 0.836)">OBJETO</a>
-      <a href="./registro.html" class="nav-item" active-color="rgba(248, 97, 10, 0.836)">REGISTRAR</a>
-      <a href="./solicitud.html" class="nav-item" active-color="rgba(248, 97, 10, 0.836)">SOLICITUD</a>
-      <span class="nav-indicator"></span>
-     </nav>
-
-  
+    <ul class="nav nav-tabs col-12" >
+      <li class="nav-item">
+        <a class="nav-link" href="./jefe_objeto.html">OBJETOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registro_jefe.html">REGISTRO OBJETOS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="./soli_us_jefe.html">SOLICITUDES USUARIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./soli_dep_jefe.html">SOLICITUDES DEPARTAMENTO</a>
+      </li>       
+    </ul>
+      
     </div>
     <br>
         <div class="card">
@@ -78,7 +85,7 @@
               <th>30/10/2000</th>
               <th>20021523</th>
               <th>dañado</th>
-              <th><a href="./verificar.html"><button id="ver" class="btn btn-warning badge-pill" type="submit" 
+              <th><a href="./verificar_us_jefe.html"><button id="ver" class="btn btn-warning badge-pill" type="submit" 
                 style="width: 100px ; background-color:rgba(216, 87, 12, 0.918); border-color: rgba(216, 87, 12, 0.918);color: aliceblue; border-radius: 10px;">VERIFICAR</button></a></th>
               
             </tr>
@@ -91,7 +98,7 @@
   
 
     
-      <script src="./js/snake.js"></script>
+    
     </body>
 
 
